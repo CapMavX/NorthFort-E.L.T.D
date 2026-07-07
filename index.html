@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NorthFort Engineering Limited | Facility Management, MEP, Oil & Gas Services</title>
+  <meta name="description"
+    content="NorthFort Engineering Limited delivers premium facility management, HVAC, general MEP engineering, procurement, and oil & gas services across Africa. Conforming to ISO standards.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Sticky Header -->
+  <header id="site-header">
+    <div class="container">
+      <div class="header-wrap">
+        <a href="index.html" class="branding">
+          <img src="assets/logo.png" alt="NorthFort Engineering Limited" class="logo-img">
+        </a>
+
+        <nav class="nav-menu">
+          <ul class="main-nav">
+            <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+            <li class="nav-item">
+              <a href="services.html" class="nav-link">Services <i class="fa-solid fa-chevron-down"></i></a>
+              <ul class="sub-menu">
+                <li class="sub-menu-item"><a href="services.html">Core Services</a></li>
+                <li class="sub-menu-item"><a href="procurement.html">Procurement & Supply</a></li>
+                <li class="sub-menu-item"><a href="mep-solutions.html">Engineering & MEP Solutions</a></li>
+                <li class="sub-menu-item"><a href="oil-gas.html">Oil & Gas Services</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Governance <i class="fa-solid fa-chevron-down"></i></a>
+              <ul class="sub-menu">
+                <li class="sub-menu-item"><a href="management.html">Management & Organogram</a></li>
+                <li class="sub-menu-item"><a href="corporate-policies.html">Corporate Policies</a></li>
+                <li class="sub-menu-item"><a href="capacities.html">Capacities & Equipment</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Insights <i class="fa-solid fa-chevron-down"></i></a>
+              <ul class="sub-menu">
+                <li class="sub-menu-item"><a href="news.html">News & Happenings</a></li>
+                <li class="sub-menu-item"><a href="career.html">Career</a></li>
+                <li class="sub-menu-item"><a href="downloads.html">Downloads</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <a href="contact.html" class="btn btn-outline">Let's Talk</a>
+          <div class="hamburger" id="hamburger-trigger">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Full-screen Search Overlay -->
+  <div id="search-overlay" class="search-overlay">
+    <button class="close-btn" id="close-search"><i class="fa-solid fa-xmark"></i></button>
+    <div class="search-overlay-container container">
+      <div class="search-form-wrap">
+        <input type="text" id="search-input" placeholder="Type to search NorthFort..." autocomplete="off">
+        <div class="search-line"></div>
+      </div>
+      <div id="search-results" class="search-results-list"></div>
+    </div>
+  </div>
+
+  <div id="search-results" class="search-results-list"></div>
+  </div>
+  </div>
+  <!-- Full-screen Overlay Menu -->
+  <div id="overlay-menu" class="overlay-menu">
+    <div class="overlay-container container">
+      <div class="overlay-header">
+        <button class="close-btn" id="close-overlay"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="overlay-content">
+        <div class="overlay-nav-col">
+          <ul class="overlay-nav">
+            <li>
+              <div class="overlay-nav-row">
+                <span class="nav-num">01</span>
+                <a href="index.html" class="overlay-nav-link active">Home</a>
+              </div>
+            </li>
+            <li>
+              <div class="overlay-nav-row">
+                <span class="nav-num">02</span>
+                <a href="about.html" class="overlay-nav-link ">About Us</a>
+              </div>
+            </li>
+            <li class="overlay-dropdown">
+              <div class="overlay-nav-row">
+                <span class="nav-num">03</span>
+                <a href="#" class="overlay-nav-link ">Services <i class="fa-solid fa-plus"></i></a>
+              </div>
+              <ul class="overlay-sub">
+                <li><a href="services.html">Core Services</a></li>
+                <li><a href="procurement.html">Procurement & Supply</a></li>
+                <li><a href="mep-solutions.html">MEP & HVAC Solutions</a></li>
+                <li><a href="oil-gas.html">Oil & Gas Services</a></li>
+              </ul>
+            </li>
+            <li class="overlay-dropdown">
+              <div class="overlay-nav-row">
+                <span class="nav-num">04</span>
+                <a href="#" class="overlay-nav-link ">Governance <i class="fa-solid fa-plus"></i></a>
+              </div>
+              <ul class="overlay-sub">
+                <li><a href="management.html">Management & Organogram</a></li>
+                <li><a href="corporate-policies.html">Corporate Policies</a></li>
+                <li><a href="capacities.html">Capacities & Equipment</a></li>
+              </ul>
+            </li>
+            <li class="overlay-dropdown">
+              <div class="overlay-nav-row">
+                <span class="nav-num">05</span>
+                <a href="#" class="overlay-nav-link ">Insights <i class="fa-solid fa-plus"></i></a>
+              </div>
+              <ul class="overlay-sub">
+                <li><a href="news.html">News & Happenings</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="downloads.html">Downloads</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="overlay-info-col">
+          <div class="info-block">
+            <h4>Get In Touch</h4>
+            <p>Lekky County Homes, Ikota-Lekki, Lagos State, Nigeria.</p>
+          </div>
+          <div class="info-block">
+            <h4>Work Inquiries</h4>
+            <p>northforteng@gmail.com</p>
+            <p>Ph: +234(0)803 509 0368</p>
+          </div>
+          <div class="info-block">
+            <h4>Join Our Team</h4>
+            <p>northforteng@gmail.com</p>
+          </div>
+          <div class="info-socials">
+            <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-split">
+    <!-- Background Layer for Blur Transition -->
+    <div class="hero-bg-layer"></div>
+
+    <div class="hero-left-panel">
+      <!-- Giant background text -->
+      <div class="hero-bg-text">Since 1996</div>
+    </div>
+
+    <div class="hero-right-panel">
+      <div class="container">
+        <div class="hero-right-wrap">
+          <div class="hero-top-line"></div>
+          <p class="hero-right-subtitle">We provide bespoke technical solutions tailored to your particular engineering
+            and facility needs.</p>
+
+          <h1 class="hero-title-split">
+            Welcome to<br>NorthFort E.L.T.D.
+          </h1>
+
+          <!-- Certificates Section (Static across slides) -->
+          <div class="hero-certificates">
+            <div class="cert-item">
+              <svg width="48" height="48" viewBox="0 0 100 100" class="cert-svg">
+                <defs>
+                  <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#FFE259" />
+                    <stop offset="100%" stop-color="#FFA751" />
+                  </linearGradient>
+                </defs>
+                <circle cx="50" cy="50" r="48" fill="url(#gold-grad)" stroke="#d4af37" stroke-width="1" />
+                <circle cx="50" cy="50" r="42" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="3,2" />
+                <circle cx="50" cy="50" r="38" fill="url(#gold-grad)" />
+                <text x="50" y="32" font-family="'Inter', sans-serif" font-size="7.5" font-weight="800" fill="#2d2200"
+                  text-anchor="middle" letter-spacing="1">CERTIFIED</text>
+                <text x="50" y="54" font-family="'Inter', sans-serif" font-size="14" font-weight="900" fill="#2d2200"
+                  text-anchor="middle">ISO</text>
+                <text x="50" y="66" font-family="'Inter', sans-serif" font-size="7" font-weight="800" fill="#2d2200"
+                  text-anchor="middle">9001:2008</text>
+                <path d="M50,75 L52,78 L55,78 L53,80 L54,83 L50,81 L46,83 L47,80 L45,78 L48,78 Z" fill="#2d2200" />
+              </svg>
+              <div class="cert-meta">
+                <span class="cert-title">ISO 9001:2008</span>
+                <span class="cert-sub">QMS Certified</span>
+              </div>
+            </div>
+            <div class="cert-item">
+              <svg width="48" height="48" viewBox="0 0 100 100" class="cert-svg">
+                <defs>
+                  <linearGradient id="silver-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#f2f2f2" />
+                    <stop offset="100%" stop-color="#d9d9d9" />
+                  </linearGradient>
+                </defs>
+                <path
+                  d="M12,50 C12,25 35,8 60,8 C72,8 85,14 88,24 C90,30 85,38 76,42 C65,47 50,47 38,42 C22,35 15,22 25,14"
+                  fill="none" stroke="#e11d48" stroke-width="2" stroke-linecap="round" opacity="0.85" />
+                <path
+                  d="M88,50 C88,75 65,92 40,92 C28,92 15,86 12,76 C10,70 15,62 24,58 C35,53 50,53 62,58 C78,65 85,78 75,86"
+                  fill="none" stroke="#e11d48" stroke-width="2" stroke-linecap="round" opacity="0.85" />
+                <circle cx="50" cy="50" r="38" fill="url(#silver-grad)" stroke="#e11d48" stroke-width="2.5" />
+                <circle cx="50" cy="50" r="34" fill="none" stroke="#ffffff" stroke-width="1.5" />
+                <text x="50" y="44" font-family="'Inter', sans-serif" font-size="11" font-weight="900" fill="#1e293b"
+                  text-anchor="middle">OHSAS</text>
+                <text x="50" y="58" font-family="'Inter', sans-serif" font-size="9" font-weight="800" fill="#e11d48"
+                  text-anchor="middle">18001:2007</text>
+                <text x="50" y="70" font-family="'Inter', sans-serif" font-size="5" font-weight="700" fill="#64748b"
+                  text-anchor="middle" letter-spacing="0.5">CERTIFIED CO.</text>
+              </svg>
+              <div class="cert-meta">
+                <span class="cert-title">OHSAS 18001:2007</span>
+                <span class="cert-sub">Safety Certified</span>
+              </div>
+            </div>
+            <div class="cert-item">
+              <svg width="48" height="48" viewBox="0 0 100 100" class="cert-svg">
+                <path
+                  d="M12,50 C12,25 35,8 60,8 C72,8 85,14 88,24 C90,30 85,38 76,42 C65,47 50,47 38,42 C22,35 15,22 25,14"
+                  fill="none" stroke="#e11d48" stroke-width="2" stroke-linecap="round" opacity="0.85" />
+                <path
+                  d="M88,50 C88,75 65,92 40,92 C28,92 15,86 12,76 C10,70 15,62 24,58 C35,53 50,53 62,58 C78,65 85,78 75,86"
+                  fill="none" stroke="#e11d48" stroke-width="2" stroke-linecap="round" opacity="0.85" />
+                <circle cx="50" cy="50" r="38" fill="url(#silver-grad)" stroke="#e11d48" stroke-width="2.5" />
+                <circle cx="50" cy="50" r="34" fill="none" stroke="#ffffff" stroke-width="1.5" />
+                <text x="50" y="44" font-family="'Inter', sans-serif" font-size="11" font-weight="900" fill="#1e293b"
+                  text-anchor="middle">OHSAS</text>
+                <text x="50" y="58" font-family="'Inter', sans-serif" font-size="9" font-weight="800" fill="#e11d48"
+                  text-anchor="middle">14001:2004</text>
+                <text x="50" y="70" font-family="'Inter', sans-serif" font-size="5" font-weight="700" fill="#64748b"
+                  text-anchor="middle" letter-spacing="0.5">CERTIFIED CO.</text>
+              </svg>
+              <div class="cert-meta">
+                <span class="cert-title">OHSAS 14001:2004</span>
+                <span class="cert-sub">EMS Certified</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Three columns of services at the bottom of the hero -->
+          <div class="hero-features-grid">
+            <div class="hero-feature-col" data-slide="1">
+              <div class="feature-line"></div>
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+              <h4>MEP & HVAC Construction</h4>
+            </div>
+            <div class="hero-feature-col" data-slide="2">
+              <div class="feature-line"></div>
+              <i class="fa-solid fa-oil-well"></i>
+              <h4>Oil & Gas Engineering</h4>
+            </div>
+            <div class="hero-feature-col" data-slide="3">
+              <div class="feature-line"></div>
+              <i class="fa-solid fa-dolly"></i>
+              <h4>Procurement & Supply</h4>
+            </div>
+          </div>
+
+          <!-- Slider Controls (Dots + Arrows in same row) -->
+          <div class="hero-slider-controls">
+            <div class="hero-dots">
+              <span class="hero-dot active" data-slide="0"></span>
+              <span class="hero-dot" data-slide="1"></span>
+              <span class="hero-dot" data-slide="2"></span>
+              <span class="hero-dot" data-slide="3"></span>
+            </div>
+
+            <div class="hero-arrows">
+              <button class="hero-arrow-btn" id="hero-prev" aria-label="Previous Slide"><i
+                  class="fa-solid fa-arrow-left-long"></i></button>
+              <button class="hero-arrow-btn" id="hero-next" aria-label="Next Slide"><i
+                  class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats-banner scroll-reveal">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number" data-target="15" data-suffix="+">0</div>
+          <div class="stat-label">Years HVAC Experience</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="6" data-suffix="+">0</div>
+          <div class="stat-label">Major Client Portfolios</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="13" data-suffix="+">0</div>
+          <div class="stat-label">Valued Engineering Assets</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="100" data-suffix="%">0</div>
+          <div class="stat-label">HSE Safety Commitment</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Services Section -->
+  <section id="sectors" class="scroll-reveal">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle">What We Do</span>
+        <h2 class="section-title">Our Core Sectors</h2>
+        <p>Providing specialized engineering design, procurement, and MEP/HVAC construction services tailored to satisfy
+          international standards.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fa-solid fa-dolly"></i>
+          </div>
+          <h3>Procurement & Supply</h3>
+          <p>Supply of assorted fittings, valves (ball, check, gate, air), compressors, instrumentation panels, power
+            generators, chemicals, paint, and environmental remediation equipment.</p>
+          <a href="procurement.html" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+          </div>
+          <h3>Engineering & MEP Solutions</h3>
+          <p>Air conditioning (CAC, RAC, VRF), central industrial chillers, smart building controls, ventilation (FCU,
+            ERV), and integrated MEP design and installation services.</p>
+          <a href="mep-solutions.html" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fa-solid fa-oil-well"></i>
+          </div>
+          <h3>Oil & Gas Engineering</h3>
+          <p>Front-end detailed engineering (FEED), conceptual design for pipelines, supply of specialized high-pressure
+            valves, and gas compressor station maintenance services.</p>
+          <a href="oil-gas.html" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Teaser Section -->
+  <section class="section-dark scroll-reveal">
+    <div class="container">
+      <div class="about-teaser">
+        <div class="about-teaser-img">
+          <img src="assets/company_img18.jpg" alt="Building Facility Management">
+        </div>
+        <div class="about-teaser-content">
+          <span class="section-subtitle">A Tradition of Excellence</span>
+          <h3>Engineered for Integrity, Built for Quality</h3>
+          <p>NorthFort Engineering Limited is established to deliver cost-effective, quality, safe, and prompt
+            engineering and facility services across the African continent. Our technical team is composed of seasoned
+            project directors, mechanical technicians, and managers with deep industrial footprints.</p>
+          <ul class="features-list">
+            <li><i class="fa-solid fa-circle-check"></i> Compliance to ISO 9001:2008 Quality Standards</li>
+            <li><i class="fa-solid fa-circle-check"></i> HSE policies aligned with OHSAS 18001 standards</li>
+            <li><i class="fa-solid fa-circle-check"></i> Strong local content and capacity development</li>
+          </ul>
+          <a href="about.html" class="btn btn-primary">Our Profile</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Section -->
+  <section id="projects" class="scroll-reveal">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle">Our Track Record</span>
+        <h2 class="section-title">Previous Projects Done</h2>
+        <p>A glimpse of projects executed and currently maintained by NorthFort Engineering Limited, demonstrating our
+          commitment to performance.</p>
+      </div>
+
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="completed">Completed</button>
+        <button class="filter-btn" data-filter="ongoing">Ongoing</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card" data-status="completed">
+          <div class="project-img-wrapper">
+            <img src="assets/company_img5.jpg" alt="HVAC Equipment installation">
+            <span class="project-badge completed">Completed</span>
+          </div>
+          <div class="project-details">
+            <div class="project-client">Dangote Fertilizer</div>
+            <h3 class="project-title">Installation and Commissioning of HVAC Equipment</h3>
+            <div class="project-meta">
+              <span><i class="fa-solid fa-location-dot"></i> Lekki, Lagos</span>
+              <span>2025</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" data-status="completed">
+          <div class="project-img-wrapper">
+            <img src="assets/company_img18.jpg" alt="Chiller repair">
+            <span class="project-badge completed">Completed</span>
+          </div>
+          <div class="project-details">
+            <div class="project-client">Delta AFRIK</div>
+            <h3 class="project-title">Carrier Chiller Repair & Fans Regeneration</h3>
+            <div class="project-meta">
+              <span><i class="fa-solid fa-location-dot"></i> VI, Lagos</span>
+              <span>2022</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" data-status="ongoing">
+          <div class="project-img-wrapper">
+            <img src="assets/company_img15.jpg" alt="Conference Hall HVAC">
+            <span class="project-badge ongoing">Ongoing</span>
+          </div>
+          <div class="project-details">
+            <div class="project-client">Corona Day School</div>
+            <h3 class="project-title">Periodic Conference Hall HVAC Maintenance</h3>
+            <div class="project-meta">
+              <span><i class="fa-solid fa-location-dot"></i> Lekki, Lagos</span>
+              <span>Current</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card" data-status="ongoing">
+          <div class="project-img-wrapper">
+            <img src="assets/company_img9.jpg" alt="Office Building Cooling">
+            <span class="project-badge ongoing">Ongoing</span>
+          </div>
+          <div class="project-details">
+            <div class="project-client">Landmark Realtor</div>
+            <h3 class="project-title">Monthly cooling system support and servicing</h3>
+            <div class="project-meta">
+              <span><i class="fa-solid fa-location-dot"></i> Lekki, Lagos</span>
+              <span>Current</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card" data-status="completed">
+          <div class="project-img-wrapper">
+            <img src="assets/company_img19.jpg" alt="Daikin Chillers">
+            <span class="project-badge completed">Completed</span>
+          </div>
+          <div class="project-details">
+            <div class="project-client">Sapetro Limited</div>
+            <h3 class="project-title">30-Ton Daikin Chillers & Concealed Units servicing</h3>
+            <div class="project-meta">
+              <span><i class="fa-solid fa-location-dot"></i> VI, Lagos</span>
+              <span>2026</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card" data-status="completed">
+          <div class="project-img-wrapper">
+            <img src="assets/company_img2.jpg" alt="Gas Station Repairs">
+            <span class="project-badge completed">Completed</span>
+          </div>
+          <div class="project-details">
+            <div class="project-client">WAGPCO Limited</div>
+            <h3 class="project-title">Gas Compressor Station HVAC Maintenance</h3>
+            <div class="project-meta">
+              <span><i class="fa-solid fa-location-dot"></i> West Africa</span>
+              <span>2025</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner Section -->
+  <section class="cta-banner scroll-reveal">
+    <div class="container">
+      <h2>Have a Project in Mind?</h2>
+      <p>Consult with our engineering and procurement team today for premium HVAC, MEP, and facility operations
+        solutions.</p>
+      <a href="contact.html" class="btn btn-primary">Contact Our Engineers <i class="fa-solid fa-paper-plane"></i></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <h3>NorthFort</h3>
+          <p>NorthFort Engineering Limited delivers cost-effective, high-quality, and safe engineering procurement,
+            construction, and facilities operations to corporate and oil & gas facilities across Africa.</p>
+          <div class="social-links">
+            <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="management.html">Management Org</a></li>
+            <li><a href="corporate-policies.html">Corporate Policies</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Services</h3>
+          <ul class="footer-links">
+            <li><a href="procurement.html">Procurement & Supply</a></li>
+            <li><a href="mep-solutions.html">MEP & HVAC Solutions</a></li>
+            <li><a href="oil-gas.html">Oil & Gas Services</a></li>
+            <li><a href="capacities.html">Equipments & Tools</a></li>
+            <li><a href="career.html">Career Opportunities</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-contact">
+          <h3>Contact Us</h3>
+          <ul>
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Lekky County Homes, Ikota-Lekki, Lagos State, Nigeria.</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <span>+234(0)803 509 0368</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <span>northforteng@gmail.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 NorthFort Engineering Limited. All Rights Reserved. RC6949546</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <!-- Sticky Side Socialbar (Oviswift Style) -->
+  <div class="sticky-socialbar">
+    <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+    <a href="#" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+    <div class="line"></div>
+    <div class="text">Follow Us</div>
+  </div>
+  <!-- Floating Search Button (Oviswift Style) -->
+  <button id="floating-search-trigger" class="floating-search-btn" aria-label="Search Site">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+</body>
+
+</html>

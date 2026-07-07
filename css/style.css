@@ -863,9 +863,6 @@ section {
     background-color: transparent !important;
     backdrop-filter: none !important;
     -webkit-backdrop-filter: none !important;
-    height: 100vh !important;
-    height: 100dvh !important;
-    overflow: hidden !important;
   }
 
   .overlay-container {
@@ -874,10 +871,8 @@ section {
     max-width: 100vw !important;
     width: 100vw !important;
     height: 100vh !important;
-    height: 100dvh !important;
     display: flex !important;
     flex-direction: column !important;
-    overflow: hidden !important;
   }
 
   .overlay-header {
@@ -895,13 +890,11 @@ section {
     display: grid !important;
     grid-template-columns: 90fr 10fr !important;
     height: 100vh !important;
-    height: 100dvh !important;
     width: 100vw !important;
     gap: 0 !important;
     padding: 0 !important;
     margin: 0 !important;
     box-sizing: border-box !important;
-    overflow: hidden !important;
   }
 
   .overlay-nav-col {
@@ -911,7 +904,6 @@ section {
     flex-direction: column !important;
     justify-content: flex-start !important;
     height: 100vh !important;
-    height: 100dvh !important;
     position: relative !important;
     box-sizing: border-box !important;
     overflow: hidden !important;
@@ -2084,7 +2076,6 @@ footer {
   left: 0;
   width: 100vw;
   height: 100vh;
-  height: 100dvh;
   background-color: rgba(15, 23, 27, 0.97);
   backdrop-filter: blur(15px);
   z-index: 2000;

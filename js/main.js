@@ -88,6 +88,11 @@ function initStatsCounter() {
 
   let animated = false;
 
+  // Ensure all numbers show 0 on load (no premature display)
+  numbers.forEach(num => {
+    num.innerText = '0';
+  });
+
   const animate = () => {
     numbers.forEach(num => {
       const target = parseInt(num.getAttribute('data-target'), 10);
@@ -113,9 +118,10 @@ function initStatsCounter() {
       if (entry.isIntersecting && !animated) {
         animate();
         animated = true;
+        observer.unobserve(statsSection);
       }
     });
-  }, { threshold: 0.1 });
+  }, { threshold: 0.35, rootMargin: '0px 0px -50px 0px' });
 
   observer.observe(statsSection);
 }
@@ -157,31 +163,33 @@ function initProjectFilters() {
  * Validates and handles contact form submission
  */
 function initContactForm() {
-  const form = document.getElementById('contact-form');
-  if (!form) return;
+  const forms = document.querySelectorAll('#contact-form');
+  if (forms.length === 0) return;
 
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
+  forms.forEach(form => {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
 
-    // Check validity
-    if (!form.checkValidity()) {
-      form.reportValidity();
-      return;
-    }
+      // Check validity
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
 
-    const submitBtn = form.querySelector('button[type="submit"]');
-    const originalText = submitBtn.innerHTML;
-    submitBtn.disabled = true;
-    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const originalText = submitBtn.innerHTML;
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
 
-    // Mock form sending delay
-    setTimeout(() => {
-      // Create and show custom alerts matching premium style
-      alertSuccess();
-      form.reset();
-      submitBtn.disabled = false;
-      submitBtn.innerHTML = originalText;
-    }, 1500);
+      // Mock form sending delay
+      setTimeout(() => {
+        // Create and show custom alerts matching premium style
+        alertSuccess();
+        form.reset();
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalText;
+      }, 1500);
+    });
   });
 }
 
@@ -190,10 +198,13 @@ function alertSuccess() {
   const toast = document.createElement('div');
   toast.style.position = 'fixed';
   toast.style.bottom = '2rem';
-  toast.style.right = '2rem';
+  toast.style.right = '1rem';
+  toast.style.left = '1rem';
+  toast.style.maxWidth = '380px';
+  toast.style.marginLeft = 'auto';
   toast.style.backgroundColor = '#0f172a';
   toast.style.color = '#ffffff';
-  toast.style.padding = '1.25rem 2rem';
+  toast.style.padding = '1.25rem 1.5rem';
   toast.style.borderRadius = '8px';
   toast.style.boxShadow = '0 20px 25px -5px rgba(0, 0, 0, 0.3)';
   toast.style.borderLeft = '4px solid #00f0ff';
@@ -203,6 +214,7 @@ function alertSuccess() {
   toast.style.alignItems = 'center';
   toast.style.gap = '0.75rem';
   toast.style.animation = 'fadeInUp 0.3s ease';
+  toast.style.boxSizing = 'border-box';
 
   toast.innerHTML = `
     <i class="fas fa-check-circle" style="color: #00f0ff;"></i>

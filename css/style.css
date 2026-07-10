@@ -1,5 +1,5 @@
 /*
- * NorthFort Engineering Limited - Main Stylesheet
+ * Northfort Engineering Limited - Main Stylesheet
  * Responsive, Glassmorphic, and Modern Industrial Theme
  */
 
@@ -434,7 +434,7 @@ section {
   z-index: 1;
 }
 
-.about-teaser-section > .container {
+.about-teaser-section>.container {
   position: relative;
   z-index: 2;
 }
@@ -596,16 +596,18 @@ section {
 
 .hero-certificates {
   display: flex;
-  gap: 2rem;
-  margin: 1.8rem 0 2.2rem 0;
-  align-items: center;
-  width: 100%;
+  gap: 0;
+  margin: 0.5rem 0 0.25rem 0;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 82%;
 }
 
 .cert-item {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.3rem;
   transition: transform var(--transition-normal);
 }
 
@@ -613,15 +615,22 @@ section {
   transform: translateY(-3px);
 }
 
+.cert-svg {
+  width: 52px;
+  height: 52px;
+}
+
 .cert-meta {
   display: flex;
   flex-direction: column;
-  gap: 0.15rem;
+  align-items: center;
+  gap: 0.1rem;
+  text-align: center;
 }
 
 .cert-title {
   font-family: var(--font-title);
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-weight: 700;
   color: #191f23;
   line-height: 1.15;
@@ -629,7 +638,7 @@ section {
 
 .cert-sub {
   font-family: var(--font-body);
-  font-size: 0.65rem;
+  font-size: 0.6rem;
   color: var(--color-text-muted-dark);
   line-height: 1.15;
 }
@@ -804,19 +813,20 @@ section {
 
   .hero-certificates {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 0.5rem;
-    max-width: 420px;
+    max-width: 100%;
     margin: 1.2rem 0;
     width: 100%;
   }
 
   .cert-item {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    /* Center each certificate SVG */
     align-items: center;
     gap: 0;
+    width: auto;
   }
 
   .cert-item .cert-meta {
@@ -824,8 +834,8 @@ section {
   }
 
   .cert-svg {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
   }
 
   .hero-features-grid {
@@ -1511,7 +1521,7 @@ section {
   z-index: 1;
 }
 
-.cta-banner > .container {
+.cta-banner>.container {
   position: relative;
   z-index: 2;
 }

@@ -1,5 +1,5 @@
 /**
- * NorthFort Engineering Limited - Main JavaScript
+ * Northfort Engineering Limited - Main JavaScript
  * Handles navigation scroll, mobile menu, stats animation, project filtering, and form handling
  */
 
@@ -72,7 +72,7 @@ function initMobileMenu() {
     if (overlayNav && !document.querySelector('.overlay-copyright')) {
       const copyrightDiv = document.createElement('div');
       copyrightDiv.className = 'overlay-copyright';
-      copyrightDiv.innerHTML = '© NorthFort E.L.T.D.<br>All right reserved.';
+      copyrightDiv.innerHTML = '© Northfort E.L.T.D.<br>All right reserved.';
       overlayNav.parentNode.insertBefore(copyrightDiv, overlayNav.nextSibling);
     }
   }
@@ -249,8 +249,8 @@ function initSearch() {
   searchInput.placeholder = 'Search...';
 
   const searchIndex = [
-    { title: "Home Page", url: "index.html", desc: "Welcome to NorthFort Engineering Limited. MEP, Procurement & Supply, Oil & Gas Services." },
-    { title: "About Us", url: "about.html", desc: "Learn about NorthFort profile, vision, mission, auditors, bankers, and medical retainer clinic." },
+    { title: "Home Page", url: "index.html", desc: "Welcome to Northfort Engineering Limited. MEP, Procurement & Supply, Oil & Gas Services." },
+    { title: "About Us", url: "about.html", desc: "Learn about Northfort profile, vision, mission, auditors, bankers, and medical retainer clinic." },
     { title: "Our Services Overview", url: "services.html", desc: "Explore our complete range of technical, procurement, and engineering solutions." },
     { title: "Procurement & Supply", url: "procurement.html", desc: "Sourcing and supply of industrial fittings, tubulars, valves (ball, butterfly, relief, check, gate), compressors, power generators, chemicals, paint, and environmental remediation equipment." },
     { title: "Engineering & MEP Solutions", url: "mep-solutions.html", desc: "Air conditioning installations (CAC, RAC, VRF), chilled water systems, maintenance, plumbing, electrical, and BMS." },
@@ -259,7 +259,7 @@ function initSearch() {
     { title: "Corporate Policies & Compliance", url: "corporate-policies.html", desc: "HSE guidelines, community relations, ISO 9001:2015 Quality Management System (QMS), and Nigerian Local Content development." },
     { title: "Capacities & Logistical Equipment", url: "capacities.html", desc: "Testing instruments (pressure manifolds, FLIR thermal camera, clamp meters) and logistical fleet details." },
     { title: "News & Insights", url: "news.html", desc: "Read latest company happenings, industrial insights, and project updates." },
-    { title: "Careers at NorthFort", url: "career.html", desc: "Join our team, explore open roles (Project Manager, HVAC Engineer, Facility Tech), and submit your CV." },
+    { title: "Careers at Northfort", url: "career.html", desc: "Join our team, explore open roles (Project Manager, HVAC Engineer, Facility Tech), and submit your CV." },
     { title: "Downloads Resource Center", url: "downloads.html", desc: "Download brochures, HSE guidelines, QMS manuals, and capability profiles." },
     { title: "Contact Us", url: "contact.html", desc: "Get in touch, find office location, Lekky County Homes, and links for active support." }
   ];
@@ -345,7 +345,7 @@ function initHeroSlider() {
   const slides = [
     {
       subtitle: "We provide bespoke technical solutions tailored to your particular engineering and facility needs.",
-      title: "Welcome to<br>NorthFort E.L.T.D."
+      title: "Welcome to<br>Northfort E.L.T.D."
     },
     {
       subtitle: "MEP, HVAC, VRF, BMS, and general MEP services with expatriate and local labor provision.",
